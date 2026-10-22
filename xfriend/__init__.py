@@ -11,7 +11,7 @@ Quickstart:
     reply = companion.chat("hi there")
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 from xfriend.config import CompanionConfig, load_config
 from xfriend.companion import Companion

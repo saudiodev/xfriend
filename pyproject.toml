@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "xfriend"
-version = "0.1.0"
+version = "0.1.1"
 description = "X/Friend — modular AI companion framework for AI girlfriends & boyfriends: swappable LLM (Venice/Grok/LongCat) + image (Qwen/Wavespeed + LoRAs) + voice (SecretVoice), with rolling-scene memory compaction."
 readme = "README.md"
 requires-python = ">=3.11"

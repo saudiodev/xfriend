@@ -30,8 +30,18 @@ def _lora_hints(image_cfg) -> Optional[str]:
     return "\n".join(lines)
 
 
-def build_companion(config: CompanionConfig) -> Companion:
+def build_companion(
+    config: CompanionConfig, companion_id: Optional[str] = None
+) -> Companion:
+    """Wire modules into a Companion.
+
+    `companion_id` overrides the memory namespace (defaults to `config.name`),
+    which lets a single deployment run many isolated sessions — e.g. one
+    companion per Telegram chat or per product user.
+    """
     config = config.resolved()
+    if companion_id is None:
+        companion_id = config.name
 
     llm = LLM(config.llm)
 
@@ -79,7 +89,7 @@ def build_companion(config: CompanionConfig) -> Companion:
         llm=llm,
         tools=tools,
         store=store,
-        companion_id=config.name,
+        companion_id=companion_id,
         lora_hints=_lora_hints(config.image),
     )
     return Companion(engine=engine, config=config)
