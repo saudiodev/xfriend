@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# xfriend runtime data
+xfriend_data/
+
+# editors
+.vscode/
+.idea/
+
+# OS
+.DS_Store
