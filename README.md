@@ -61,40 +61,21 @@ memory, and compression.
 
 ## 🎧 Hear them — real audio from the API
 
-Generated live with the **candy** (her) and **blaze** (him) voices.
-
-> GitHub's markdown renderer strips `<audio>` tags, so these play as
-> **video files with a cover frame** (GitHub supports `<video>`). Each one is
-> real audio rendered by SecretVoice — download the mp3 if you want the raw
-> clip.
+Generated live with the **candy** (her) and **blaze** (him) voices. GitHub
+strips audio/video players from READMEs, so these are direct links — each one
+plays in your browser.
 
 ### her, in the candy voice
 
-<video controls src="https://github.com/saudiodev/xfriend/raw/main/examples/audio/candy-intro.mp4">Your browser does not support video.</video>
-
-*"Hey you... I saved a spot for you right here. What are you waiting for?"* — [⬇️ mp3](https://github.com/saudiodev/xfriend/raw/main/examples/audio/candy-intro.mp3)
-
-<video controls src="https://github.com/saudiodev/xfriend/raw/main/examples/audio/candy-secret.mp4">Your browser does not support video.</video>
-
-*"Whisper my name... go on, I dare you. Do it and I'll tell you a secret."* — [⬇️ mp3](https://github.com/saudiodev/xfriend/raw/main/examples/audio/candy-secret.mp3)
-
-<video controls src="https://github.com/saudiodev/xfriend/raw/main/examples/audio/candy-comecloser.mp4">Your browser does not support video.</video>
-
-*"Come closer. I promise I'm not going to bite... unless you ask nicely."* — [⬇️ mp3](https://github.com/saudiodev/xfriend/raw/main/examples/audio/candy-comecloser.mp3)
+- *"Hey you... I saved a spot for you right here. What are you waiting for?"* → [▶️ listen](https://github.com/saudiodev/xfriend/raw/main/examples/audio/candy-intro.mp3)
+- *"Whisper my name... go on, I dare you. Do it and I'll tell you a secret."* → [▶️ listen](https://github.com/saudiodev/xfriend/raw/main/examples/audio/candy-secret.mp3)
+- *"Come closer. I promise I'm not going to bite... unless you ask nicely."* → [▶️ listen](https://github.com/saudiodev/xfriend/raw/main/examples/audio/candy-comecloser.mp3)
 
 ### him, in the blaze voice
 
-<video controls src="https://github.com/saudiodev/xfriend/raw/main/examples/audio/blaze-intro.mp4">Your browser does not support video.</video>
-
-*"Hey... I've been thinking about you all day. Come here, sit with me."* — [⬇️ mp3](https://github.com/saudiodev/xfriend/raw/main/examples/audio/blaze-intro.mp3)
-
-<video controls src="https://github.com/saudiodev/xfriend/raw/main/examples/audio/blaze-secret.mp4">Your browser does not support video.</video>
-
-*"Say my name... slowly. I want to hear exactly how it sounds coming from you."* — [⬇️ mp3](https://github.com/saudiodev/xfriend/raw/main/examples/audio/blaze-secret.mp3)
-
-<video controls src="https://github.com/saudiodev/xfriend/raw/main/examples/audio/blaze-comecloser.mp4">Your browser does not support video.</video>
-
-*"Come a little closer. I have something to tell you... and it's not for everyone else's ears."* — [⬇️ mp3](https://github.com/saudiodev/xfriend/raw/main/examples/audio/blaze-comecloser.mp3)
+- *"Hey... I've been thinking about you all day. Come here, sit with me."* → [▶️ listen](https://github.com/saudiodev/xfriend/raw/main/examples/audio/blaze-intro.mp3)
+- *"Say my name... slowly. I want to hear exactly how it sounds coming from you."* → [▶️ listen](https://github.com/saudiodev/xfriend/raw/main/examples/audio/blaze-secret.mp3)
+- *"Come a little closer. I have something to tell you... and it's not for everyone else's ears."* → [▶️ listen](https://github.com/saudiodev/xfriend/raw/main/examples/audio/blaze-comecloser.mp3)
 
 > 🎙️ Generate your own with any of the 29 voices:
 > `voice: { enabled: true, voice_id: candy }` — or `velvet`, `whisper`,
