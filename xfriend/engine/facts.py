@@ -1,5 +1,5 @@
 """Facts: append-only durable memory about the user, extracted from the
-transcript (ported from callclimax's extract_facts)."""
+transcript (ported from the live engine's extract_facts)."""
 
 from __future__ import annotations
 

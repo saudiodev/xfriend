@@ -57,11 +57,17 @@ class SecretAudioVoice(VoiceService):
         voice = voice_id or self.voice_id
         url = f"{self.BASE_URL}/v1/text-to-speech/{voice}"
         params = {"output_format": output_format or self.output_format}
+        vsettings = {**self.settings, **(settings or {})}
+        # SecretVoice's `similarity_boost` is buggy server-side for many
+        # values (500 on 0.7/0.99/1.0); the `similarity` alias works. Keep the
+        # ElevenLabs-compatible config key, but send the working field name.
+        if "similarity_boost" in vsettings and "similarity" not in vsettings:
+            vsettings["similarity"] = vsettings.pop("similarity_boost")
         body: dict[str, Any] = {
             "text": text,
             "model_id": model or self.model,
             "language_code": language_code or self.language_code,
-            "voice_settings": {**self.settings, **(settings or {})},
+            "voice_settings": vsettings,
         }
         resp = self._session.post(
             url,

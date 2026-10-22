@@ -1,9 +1,9 @@
-"""xfriend — modular AI companion framework.
+"""X/Friend — modular AI companion framework for AI girlfriends & boyfriends.
 
 Text conversations with compression: swappable LLM (Venice/Grok/LongCat),
 image generation/editing (Wavespeed Qwen + LoRAs) and voice messages
-(SecretAudio), with turn management and context compaction inherited from
-the proven callclimax engine. Independent of any product database.
+(SecretVoice), with turn management and rolling-scene context compaction.
+Independent of any product database.
 
 Quickstart:
     from xfriend.orchestrator import build_from_file

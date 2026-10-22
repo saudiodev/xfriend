@@ -1,8 +1,7 @@
 """Prompt building: persona/system prompt, compaction, facts, frustration audit.
 
-All prompts are direct descendants of the proven callclimax engine
-(`helpers/live_call_engine.py`), adapted from live voice to text chat with
-media support.
+All prompts are direct descendants of the original live voice-companion
+engine, adapted from live voice to text chat with media support.
 """
 
 from __future__ import annotations
@@ -49,7 +48,7 @@ def system_prompt(
 
 def compaction_prompt(name: str, old: Optional[str], convo: str) -> str:
     """Rolling summary prompt — the compaction mechanism's core, ported from
-    callclimax with media awareness."""
+    the live voice engine with media awareness."""
     return (
         f"You maintain a rolling summary of an ongoing conversation with a "
         f"companion named {name}. Keep it factual and concise (3-5 sentences), "
@@ -60,7 +59,9 @@ def compaction_prompt(name: str, old: Optional[str], convo: str) -> str:
         f"if they seem trivial. Losing those is what breaks the illusion of a "
         f"partner who remembers them.\n"
         f"Also carry forward the current visual identity of the companion and "
-        f"any notable images or voice messages that were exchanged.\n\n"
+        f"any notable images or voice messages that were exchanged.\n"
+        f"Write a fresh summary. Do NOT repeat the previous summary text "
+        f"verbatim: fold it in, then update it with what happened since.\n\n"
         f"Previous summary: {old or '(none)'}\n\n"
         f"New exchange:\n{convo}\n\n"
         "Updated summary:"
@@ -79,7 +80,7 @@ def facts_prompt(transcript: str) -> str:
 
 def frustration_prompt(name: str, convo: str) -> str:
     """Audit that flags assistant turns the user pushed back on, so they can
-    be deleted 'as if they had never happened' (callclimax behavior)."""
+    be deleted 'as if they had never happened' (live engine behavior)."""
     return (
         f"Here is a transcript of a conversation with a companion named {name}. "
         f"Each line is prefixed with its index (0-based). Identify assistant "

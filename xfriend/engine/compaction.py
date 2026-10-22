@@ -1,4 +1,5 @@
-"""Compaction — the mechanism inherited from callclimax's live_call_engine:
+"""Compaction — the rolling-scene summary mechanism inherited from the
+original live voice engine:
 
 - trigger: history exceeds keep_messages + compact_batch
 - runs on a background thread (never blocks the reply)
