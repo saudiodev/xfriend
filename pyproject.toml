@@ -8,9 +8,9 @@ version = "0.1.0"
 description = "X/Friend — modular AI companion framework for AI girlfriends & boyfriends: swappable LLM (Venice/Grok/LongCat) + image (Qwen/Wavespeed + LoRAs) + voice (SecretVoice), with rolling-scene memory compaction."
 readme = "README.md"
 requires-python = ">=3.11"
-license = { text = "MIT" }
+license = "MIT"
 authors = [{ name = "codysaudio" }]
-keywords = ["ai", "companion", "llm", "tts", "image", "qwen", "wavespeed", "secretaudio", "venice"]
+keywords = ["ai", "companion", "girlfriend", "boyfriend", "llm", "tts", "image", "qwen", "wavespeed", "secretaudio", "secrevoice", "venice"]
 dependencies = [
     "openai>=1.40",
     "PyYAML>=6.0",
@@ -28,6 +28,11 @@ all = ["xfriend[venice,grok,longcat,wavespeed,secretaudio]"]
 
 [project.scripts]
 xfriend = "xfriend.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/saudiodev/xfriend"
+Repository = "https://github.com/saudiodev/xfriend"
+Issues = "https://github.com/saudiodev/xfriend/issues"
 
 [tool.setuptools.packages.find]
 include = ["xfriend*"]

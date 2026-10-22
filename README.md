@@ -10,7 +10,8 @@ a voice that **whispers** (audio messages). Her... or his. One config file.
 Zero database lock-in. Launch your companion in minutes.
 
 ```bash
-pip install git+https://github.com/saudiodev/xfriend
+pip install xfriend
+# or straight from the repo: pip install git+https://github.com/saudiodev/xfriend
 ```
 
 </div>
@@ -195,6 +196,8 @@ xfriend doctor --config <path>      # validate keys / base_image / wiring
 ## 📦 Install
 
 ```bash
+pip install xfriend            # from PyPI
+# or from source:
 pip install git+https://github.com/saudiodev/xfriend
 ```
 
